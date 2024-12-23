@@ -1,0 +1,11 @@
+.nav-link.disabled {
+    color: gray;
+    cursor: not-allowed;
+  }
+  
+  .tab-pane {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+  }
+  

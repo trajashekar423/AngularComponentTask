@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MyApp</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Loop through navbar items -->
+          <li
+            class="nav-item dropdown"
+            *ngFor="let item of navbarItems"
+            [ngClass]="{'dropdown': item.dropdown}"
+          >
+            <!-- Check if dropdown is true -->
+            <ng-container *ngIf="item.dropdown; else singleLink">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown{{ item.label }}"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                {{ item.label }}
+              </a>
+              <ul
+                class="dropdown-menu"
+                [attr.aria-labelledby]="'navbarDropdown' + item.label"
+              >
+                <li *ngFor="let subItem of item.submenu">
+                  <a class="dropdown-item" [routerLink]="subItem.route">
+                    {{ subItem.label }}
+                  </a>
+                </li>
+              </ul>
+            </ng-container>
+            <!-- For items without dropdown -->
+            <ng-template #singleLink>
+              <a class="nav-link" [routerLink]="item.route">{{ item.label }}</a>
+            </ng-template>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  

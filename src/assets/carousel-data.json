@@ -1,0 +1,24 @@
+[
+    {
+      "id": 0,
+      "image": "assets/images/slide1.jpg",
+      "altText": "First slide",
+      "title": "First slide label",
+      "description": "Some representative placeholder content for the first slide."
+    },
+    {
+      "id": 1,
+      "image": "assets/images/slide2.jpg",
+      "altText": "Second slide",
+      "title": "Second slide label",
+      "description": "Some representative placeholder content for the second slide."
+    },
+    {
+      "id": 2,
+      "image": "assets/images/slide3.jpg",
+      "altText": "Third slide",
+      "title": "Third slide label",
+      "description": "Some representative placeholder content for the third slide."
+    }
+  ]
+  

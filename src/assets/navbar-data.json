@@ -1,0 +1,27 @@
+[
+  {
+    "label": "Home",
+    "route": "/home",
+    "dropdown": false
+  },
+  {
+    "label": "About",
+    "route": "/about",
+    "dropdown": false
+  },
+  {
+    "label": "Services",
+    "route": "",
+    "dropdown": true,
+    "submenu": [
+      { "label": "Web Development", "route": "/services/web-development" },
+      { "label": "SEO", "route": "/services/seo" },
+      { "label": "Digital Marketing", "route": "/services/digital-marketing" }
+    ]
+  },
+  {
+    "label": "Contact",
+    "route": "/contact",
+    "dropdown": false
+  }
+]

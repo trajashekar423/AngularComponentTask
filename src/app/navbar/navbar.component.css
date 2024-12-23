@@ -1,0 +1,83 @@
+/* Set a custom background color for the navbar */
+.navbar {
+  background-color: #007bff; /* Primary blue */
+  color: white;
+}
+
+/* Style the brand/logo */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff; /* White text */
+  text-transform: uppercase;
+}
+
+/* Align the navbar items centrally */
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style each nav link */
+.nav-link {
+  color: #ffffff; /* White text */
+  font-size: 1.1rem;
+  padding: 8px 15px;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for nav links */
+.nav-link:hover {
+  background-color: #0056b3; /* Darker blue for hover */
+  color: #ffffff; /* Keep text white */
+  border-radius: 5px;
+}
+
+/* Navbar collapse button (mobile view) */
+.navbar-toggler {
+  border-color: #ffffff; /* White border for toggler */
+}
+
+/* Toggler icon color */
+.navbar-toggler-icon {
+  background-color: #ffffff; /* White icon */
+}
+
+/* Change active nav link color */
+.nav-link.active {
+  background-color: #0056b3; /* Darker blue for active state */
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+
+/* Navbar background */
+.navbar {
+  background-color: #007bff; /* Primary blue */
+  color: white;
+}
+
+/* Dropdown toggle link */
+.nav-link.dropdown-toggle {
+  color: #ffffff;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #0056b3; /* Darker blue */
+  color: white;
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown menu items */
+.dropdown-item {
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #003d80; /* Even darker blue on hover */
+  color: white;
+}
